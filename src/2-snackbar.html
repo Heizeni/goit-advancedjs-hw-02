@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор промісів (Snackbar)</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="back-link-wrapper">
+        <a href="index.html" class="button back-button">&larr; Main page</a>
+    </div>
+
+    <div class="container snackbar-container">
+        <h1>Create message</h1>
+        <form class="form">
+            <label>
+                Delay (ms)
+                <input type="number" name="delay" required />
+            </label>
+
+            <fieldset>
+                <legend>State</legend>
+                <label>
+                    <input type="radio" name="state" value="fulfilled" required />
+                    Fulfilled
+                </label>
+                <label>
+                    <input type="radio" name="state" value="rejected" required />
+                    Rejected
+                </label>
+            </fieldset>
+
+            <button type="submit">Create notification</button>
+        </form>
+    </div>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+</body>
+</html>
